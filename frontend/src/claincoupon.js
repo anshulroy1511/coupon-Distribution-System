@@ -9,7 +9,7 @@ const ClaimCoupon = () => {
 
   const handleClaim = async () => {
     try {
-      const res = await axios.post('http://localhost:5000/claim');
+      const res = await axios.post('https://coupon-distribution-system-hw0n.onrender.com/claim');
       setCoupon(res.data.coupon);
       setMessage('Coupon claimed!');
     } catch (err) {
